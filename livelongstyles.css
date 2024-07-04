@@ -1,0 +1,136 @@
+* {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.top-section-opening {
+    border: solid skyblue 10px;
+    position: relative;
+    padding: 0%;
+    background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.maintitle {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 5rem;
+}
+
+hr {
+    border: solid skyblue;
+}
+
+.navbar {
+    border: solid skyblue 10px;
+    text-align: center;
+    background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.navbar a:hover {
+    background-color: skyblue;
+}
+
+.navbar a:active {
+    background-color: whitesmoke;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcomeparagraphbox {
+    border: solid skyblue 10px;
+    background-color: tan;
+}
+
+.openingquote {
+    border: solid skyblue 10px;
+    background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.recent-pics {
+    display: flex;
+    border: solid skyblue 10px;
+    align-items: center;
+    background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.picturetext {
+    border: solid skyblue 5px;
+    box-shadow: -1px 1px , -2px 2px , -3px 3px , -4px 4px , -5px 5px;
+    text-align: center;
+}
+
+img {
+    border: solid skyblue 5px;
+    box-shadow: -1px 1px , -2px 2px , -3px 3px , -4px 4px , -5px 5px;
+}
+
+h1{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50pt;
+}
+
+h3 {
+    color: blue;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28pt;
+}
+
+.hobbies {
+    border: solid skyblue 10px;
+    text-align: center;
+    background-color: tan;
+}
+
+footer {
+    text-align: center;
+    background-color: tan;
+    border: solid skyblue 10px;
+}
+
+.contact-container {
+    border: solid skyblue 10px;
+    background-color: tan;
+}
