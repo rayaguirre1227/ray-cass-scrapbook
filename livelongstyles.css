@@ -5,162 +5,94 @@
     margin-bottom: 2%;
 }
 
-/*
-
-.top-section-opening {
-    border: solid skyblue 10px;
-    position: relative;
-    padding: 0%;
-    background-image: url(images/sky.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+body {
+    background-color: rgb(157, 240, 229);
 }
 
-.maintitle {
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-weight: 1000;
-    font-size: 5rem;
-}
-
-hr {
-    border: solid skyblue;
-}
-
-.navbar {
-    border: solid skyblue 10px;
-    text-align: center;
-    background-image: url(images/sky.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.navbar a:hover {
-    background-color: skyblue;
-}
-
-.navbar a:active {
-    background-color: whitesmoke;
-}
-
-ul{
-    list-style-type: none;
-}
-
-li {
-    display: inline;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    font-weight: 900;
-    text-align: center;
-    padding: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.welcome {
-    border: solid skyblue 10px;
-    background-color: tan;
-}
-
-.openingquote {
-    border: solid skyblue 10px;
-    background-image: url(images/sky.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.recent-pics {
-    display: flex;
-    border: solid skyblue 10px;
-    align-items: center;
-    background-image: url(images/sky.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.picturetext {
-    border: solid skyblue 5px;
-    box-shadow: -1px 1px , -2px 2px , -3px 3px , -4px 4px , -5px 5px;
-    text-align: center;
-}
-
-img {
-    border: solid skyblue 5px;
-    box-shadow: -1px 1px , -2px 2px , -3px 3px , -4px 4px , -5px 5px;
-}
-
-h1{
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-style: italic;
-    text-align: center;
-    text-decoration: underline;
-}
-
-h2{
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 900;
-    font-style: italic;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 50pt;
-}
-
-h3 {
-    color: blue;
-    text-align: center;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 28pt;
-}
-
-.hobbies {
-    border: solid skyblue 10px;
-    text-align: center;
-    background-color: tan;
-}
-
-footer {
-    text-align: center;
-    background-color: tan;
-    border: solid skyblue 10px;
-}
-
-.contact-container {
-    border: solid skyblue 10px;
-    background-color: tan;
-}
-*/
 div {
-    border: solid skyblue 10px;
+    border: solid skyblue 5px;
     text-align: center;
     background-image: url(images/sky.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+.navbar li {
+    display: inline;
+    align-items: center;
+    width: 80%;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.picture-text {
+    border: none;
+    background-image: none;
+    width: 200px;
+}
+
 .recent-pics {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .recent-pics img , .hobbies img{
     height: 250px;
     width: 40%;
     gap: 20px;
+    border: solid beige;
+    border-radius: 10%;
+
 }
 
 .recent-pics h3 {
     float: right;
 }
 
+.pics-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.pics-gallery img {
+    height: 200px;
+    width: 200px;
+    border: solid beige;
+    border-radius: 10%;
+}
+
+h1{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30pt;
+}
+
+h3 {
+    color: blue;
+    text-align: center;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+
+footer {
+    text-align: center;
+}
 
 /*ALL MOBILE SIZE CODE BELOW*/
 /*ALL MOBILE SIZE CODE BELOW*/
@@ -169,15 +101,9 @@ div {
 
 @media (max-width: 600px) {
     
-    .navbar li {
-        display: inline;
-        align-items: center;
-        width: 100%;
-    }
-
     .recent-pics {
-        display: block;
-        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
     }
 
     .recent-pics img, .hobbies img {
@@ -186,32 +112,26 @@ div {
         align-items: center;
     }
 
+    .pics-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pics-gallery img {
+        width: 60%;
+    }
+
     h1{
-        color: blue;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-        text-align: center;
-        text-decoration: underline;
-        font-size: 25pt;
+        font-size: 20pt;
     }
     
     h2 {
-        color: blue;
-        text-align: center;
-        font-size: medium;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20pt;
-    }
-
-    h3 {
-        color: blue;
-        text-align: center;
-        font-size: medium;
-        font-family: 'Times New Roman', Times, serif;
         font-size: 15pt;
     }
 
-    footer {
-        text-align: center;
+    h3 {
+        font-size: 15pt;
     }
+
 }
