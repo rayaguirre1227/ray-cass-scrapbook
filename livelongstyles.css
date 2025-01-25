@@ -5,6 +5,8 @@
     margin-bottom: 2%;
 }
 
+/*
+
 .top-section-opening {
     border: solid skyblue 10px;
     position: relative;
@@ -59,7 +61,7 @@ a {
     text-decoration: none;
 }
 
-.welcomeparagraphbox {
+.welcome {
     border: solid skyblue 10px;
     background-color: tan;
 }
@@ -133,4 +135,83 @@ footer {
 .contact-container {
     border: solid skyblue 10px;
     background-color: tan;
+}
+*/
+div {
+    border: solid skyblue 10px;
+    text-align: center;
+    background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.recent-pics {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recent-pics img , .hobbies img{
+    height: 250px;
+    width: 40%;
+    gap: 20px;
+}
+
+.recent-pics h3 {
+    float: right;
+}
+
+
+/*ALL MOBILE SIZE CODE BELOW*/
+/*ALL MOBILE SIZE CODE BELOW*/
+/*ALL MOBILE SIZE CODE BELOW*/
+
+
+@media (max-width: 600px) {
+    
+    .navbar li {
+        display: inline;
+        align-items: center;
+        width: 100%;
+    }
+
+    .recent-pics {
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .recent-pics img, .hobbies img {
+        height: 200px;
+        width: 250px;
+        align-items: center;
+    }
+
+    h1{
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 25pt;
+    }
+    
+    h2 {
+        color: blue;
+        text-align: center;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20pt;
+    }
+
+    h3 {
+        color: blue;
+        text-align: center;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15pt;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
